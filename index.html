@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="images/bookmark.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="py-5">
+        <div class="container w-75">
+            <div class="text-center">
+                <h1 class="display-5 mb-5">Bookmarker</h1>
+            </div>
+            <hr>
+            <div class="mb-4">
+                <div class="heading d-flex justify-content-center align-items-baseline mt-4 mb-3">
+                    <span><i class="fa-solid fa-bookmark fs-4"></i></span>
+                <h2 class="mx-1 fs-4 fw-medium">Bookmark your favorite sites</h2>
+                <span><i class="fa-solid fa-bookmark fs-4"></i></span>
+                </div>
+                <label for="bookmark" class="fw-bold"><i class="fa-solid fa-book-bookmark me-2"></i> Site Name</label>
+                <input id="bookmark" class="w-100 form-control mt-2 mb-4" type="text" placeholder="Bookmark Name" required>
+                <label for="siteURL" class="fw-bold"><i class="fa-solid fa-link me-2"></i> Site URL</label>
+                <input id="siteURL" class="w-100 form-control mt-2 mb-4" type="url" placeholder="Website URL" required>
+                <div id="invaledationMsg">
+                    
+                </div>
+                <button onclick="getData()" class="btn submit text-light py-2 px-5 d-block m-auto">Submit</button>
+                
+            </div>
+            <hr>
+            <div class="mt-4">
+                <table class="w-100 text-center bg-light">
+                    <thead>
+                        <tr>
+                            <th class="w-25">Index</th>
+                            <th class="w-25">Website Name</th>
+                            <th class="w-25">Visit</th>
+                            <th class="w-25">Delete</th>
+                        </tr> 
+                    </thead>
+                    <tbody id="tableBody">
+                      <tr>
+                        <td colspan="4"></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
